@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Zain&display=swap");
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(grond.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  color: #fff;
+  font-family: "Zain", serif;
+}
+
+.container {
+  text-align: center;
+  padding: 17px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+
+p {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.option {
+  background: transparent;
+  width: 70%;
+  margin: auto;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 0, 0, 0.062);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.option img {
+  width: 60%;
+  border-radius: 10px;
+  padding-top: 1rem;
+  object-fit: cover;
+  will-change: transform;
+}
+
+.container {
+  text-align: center;
+  padding: 17px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+  line-height: 1.5;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.option {
+  background: transparent;
+  width: 70%;
+  margin: auto;
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(0, 0, 0, 0.062);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.option img {
+  width: 60%;
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+
+.option:hover {
+  transform: scale(1.1) rotate(10deg); 
+  transition: all 300ms ease-in-out;
+   box-shadow: 0 0 150px RGB(51, 204, 255);
+  background-color: rgba(0, 255, 234, 0.1); 
+}
+
+.option p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+@media  screen and (max-width: 768px) {
+  @keyframes slideInDynamic {
+  0% {
+    transform: translateX(-100%) rotate(-20deg);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(10%) rotate(10deg);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(-5%) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.option {
+  animation: slideInDynamic 1s ease-out forwards;
+}
+
+
+
+}
+
+/* Media Query untuk tampilan desktop */
+@media screen and (min-width: 768px) {
+
+  body{
+    background-image: url(bgg.jpg);
+  }
+
+  h1 {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+  }
+
+  p {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+    color: #fff;
+  }
+
+  .options {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .option {
+    width: 200px;
+    margin: 10px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+     border: 1px solid rgba(0, 0, 0, 0.062);
+      
+  }
+
+.option:hover {
+  transform: scale(1.1);
+  transition: all;
+  transition-duration: 300ms;
+  box-shadow: 0 0 150px RGB(51, 204, 255);
+}
+
+.option p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: white;
+}
+

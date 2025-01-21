@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+ background-color: white;
+}
+
+.icon {
+  font-size: 25px;
+  font-family: "Delius Swash Caps", serif;
+}
+
+.icon i {
+      font-family: "Delius Swash Caps", serif;
+      font-size: 18px; /* Menentukan ukuran font */
+    }
+
+.icon a{
+  color: white;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00ced1;
+  color: white;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+
+ol li::marker {
+  font-size: 25px;
+}
+
+
+.hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            z-index: 1000;
+        }
+
+        .bar {
+            width: 100%;
+            height: 4px;
+            background-color: white;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 250px;
+            height: 100%;
+            background-color: #00adb3;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    position: relative;
+    padding-bottom: 5px; /* Ruang untuk garis bawah */
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease; /* Animasi garis bawah */
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%; /* Garis bawah penuh saat hover atau aktif */
+}
+        .nav-active {
+            right: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+.content {
+  padding: 1rem;
+}
+
+.content p{
+  margin-left: 10px;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.content img {
+  display: block;
+  margin: 0 auto;
+}
+
+.content ol li{
+  margin: 10px 20px;
+}
+
+.content ol li h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+
+}
+
+.content ol li p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 10px
+}
+
+.content ul li{
+  list-style-type: circle;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  header {
+    width: 100%;
+  }
+
+  header nav u{
+    gap: 1rem;
+  }
+
+
+header nav ul li a{
+  padding: 10px ;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  
+}
+
+.nav-menu{
+  width: 30%;
+}
+
+.logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+  .content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .content ol li {
+    text-align: left;
+    margin: 0 30px;
+  }
+
+  ol li::marker {
+  font-size: 30px; 
+  }
+
+  .content ol li h2 {
+    font-size: 2rem;
+  }
+
+  .content ol li p {
+    font-size: 1.2rem;
+    margin: 0 20px;
+  }
+}

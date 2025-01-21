@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Kelas 11.4</title>
+    <link rel="stylesheet" href="style-it.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+  </head>
+  <body>
+    <header>
+      <div class="icon">
+  <a href="https://www.instagram.com/cleverstyy?igsh=MThiZXRma2d0cm03aA=="> <i class='bx bxl-instagram'> Cleverstyy</i></a>
+   </div>
+
+  <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="it.html">IT</a>
+        <a href="lingkungan.html">Lingkungan</a>
+        <a href="pangan.html">Pangan</a>
+    </nav>
+  </header>
+    <main>
+      <section class="content">
+        <h1>STOP-RUS!</h1>
+        <img src="hand.jpg" width="350px" />
+
+        <br><br>
+        <ol>
+        
+            <h2>Apa sih itu <span style="color: #2196F3;">  STOP-RUS?</h2></span>
+          </li>
+          
+            STOP-RUS! adalah inovasi sanitasi terbaru yang dirancang untuk
+            <b>memberikan perlindungan ekstra terhadap penyebaran virus dan
+                kuman.</b>
+            
+            Menggunakan teknologi sensor otomatis, Stop-rush memastikan setiap
+            pengguna dapat membersihkan tangan secara higienis tanpa perlu
+            menyentuh alat secara langsung, mengurangi risiko kontaminasi
+            silang. Dengan bentuk yang praktis dan mudah digunakan, Stoprush
+            dapat dipasang di berbagai tempat, seperti pintu masuk gedung, ruang
+            publik, atau area kerja.
+            
+              <span style="background-color: #03A9F4;">Alat ini bekerja dengan mendeteksi gerakan tangan dan secara
+              otomatis mengeluarkan cairan disinfektan dalam jumlah yang
+              tepat.</span>
+            
+            Hal ini menjamin setiap pengguna memperoleh perlindungan maksimal,
+            tanpa perlu khawatir tentang penggunaan cairan yang berlebihan atau
+            kurang.
+          
+          
+       <br><br>
+            
+<h2>Alat dan bahan yang dibutuhan</h2>
+          
+          <table border="1">
+  <tr>
+    <th>Alat</th>
+    <th>Bahan</th>
+  </tr>
+  <tr>
+    <td>PC atau Laptop</td>
+    <td>Arduino UNO R3 (1 unit)</td>
+  </tr>
+  <tr>
+    <td>Aplikasi Arduino-Ide pada PC/Laptop</td>
+    <td>Infra-red (IR) Sensor (1 unit)</td>
+  </tr>
+  <tr>
+    <td>Kabel USB</td>
+    <td> Micro servo (1 unit)</td>
+  </tr>
+  <tr>
+    <td> Double tape tebal</td>
+    <td> Kabel jumper male to female (6 pcs)</td>
+  </tr>
+  <tr>
+    <td>Lem tembak</td>
+    <td>Kawat</td>
+  </tr>
+</table>
+
+<br><br>
+
+          <h2>Cara Membuat</h2>
+          <ul>
+            <li>Siapkan alat dan bahan</li>
+            <li>
+              Pasang kabel jumper pada IR sensor dan micro servo (sesuaikan
+              merah untuk power, coklat untuk GND, dan kuning untuk PinDigital)
+            </li>
+            <li>
+              Siapkan komponen IR, masukkan kabel power (merah) pada pin 5v di
+              Arduino, kabel coklat dimasukkan pada pin GND di Arduino, dan
+              kabel kuning masukkan pada pin digital (bebas, namun saya
+              menggunakan pin nomor 2)
+            </li>
+            <li>
+              Siapkan komponen micro servo, seperti tadi. Masukkan kabel power
+              (merah) pada pin 3,7v di Arduino, kabel coklat dimasukkan pada pin
+              GND kedua di Arduino, dan kabel kuning masukkan pada pin digital
+              (bebas, namun disini saya menggunakan pin nomor 8 untuk micro
+              servonya)
+            </li>
+            <li>Setelah terpasang dengan benar semuanya, colokkan USB</li>
+          </ul>
+        </ol>
+        <br><br>
+      </section>
+    </main>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+  </body>
+</html>
