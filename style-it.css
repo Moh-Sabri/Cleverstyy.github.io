@@ -18,7 +18,7 @@ body {
 }
 
 .icon a {
-  font-family: 'Arial', sans-serif; /* Ganti dengan nama font yang diinginkan */
+  font-family: "Delius Swash Caps", serif;
   font-size: 16px; /* Sesuaikan ukuran font */
   color: #333; /* Warna teks */
   text-decoration: none; /* Hilangkan garis bawah pada link */
