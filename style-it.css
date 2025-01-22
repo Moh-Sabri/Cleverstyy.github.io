@@ -17,14 +17,17 @@ body {
   font-family: "Delius Swash Caps", serif;
 }
 
-.icon i {
-      font-family: "Delius Swash Caps", serif;
-      font-size: 18px; /* Menentukan ukuran font */
-    }
-
-.icon a{
-  color: white;
+.icon a {
+  font-family: 'Arial', sans-serif; /* Ganti dengan nama font yang diinginkan */
+  font-size: 16px; /* Sesuaikan ukuran font */
+  color: #333; /* Warna teks */
+  text-decoration: none; /* Hilangkan garis bawah pada link */
 }
+
+.icon a:hover {
+  color: #0073e6; /* Warna teks saat di-hover */
+}
+
 
 
 header {
